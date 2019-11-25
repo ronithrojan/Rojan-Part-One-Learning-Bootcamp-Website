@@ -1,0 +1,151 @@
+/*universal styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600, 300, 400; 
+    background: #e8ded9;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Class Styles */
+
+.main-nav {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+.main-nav a:hover {
+    color: #61c386;
+}
+
+.main-nav a {
+    color: #5b8c6f;
+}
+
+.logo {
+    font-weight: 600; 
+    color: black;
+    font-size: 1.3rem;
+}
+
+.code {
+    color: #61c386;
+}
+
+.button {
+    border: #61c386 1px solid;
+    color: white;
+    background: #61c386;
+    padding: 12px;
+    border-radius: 10px;
+    width: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.button:hover {
+    background: #f7e966;
+}
+
+.container .button {
+    color: white;
+}
+
+.navbar .main-nav li:last-child a:hover {
+    background:  #f7e966
+}
+
+.heading {
+    font-weight: 600;
+    width: auto;
+}
+
+.container {
+    margin: auto;
+}
+
+.container a:hover {
+    color: #61c386;
+}
+
+.container p {
+    margin-bottom: 50px;
+    color: #5b8c6f;
+}
+
+.content {
+    font-weight: 400;
+}
+
+.container li {
+    justify-content: space-between;
+}
+
+.container .main-nav ul {
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    body {
+        background: url('img/code.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #e8ded9;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 15px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 20px;
+    }
+
+    .content {
+        margin-top: 150px;
+        width: 35%;
+        margin-left: 3%;
+    }
+
+    .button {
+        width: auto;
+        max-width: 200px;
+    }
+}
